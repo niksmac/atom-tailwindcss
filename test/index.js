@@ -5,7 +5,7 @@ const autcomplete = require('../src');
 const provider = require('../src/provider');
 
 test('package', async t => {
-  t.equal(await autcomplete.getProvider(), provider, 'package loads provider');
+  t.equal(await autcomplete.getProvider(), provider, 'package loads autocompletion provider');
   t.end();
 });
 

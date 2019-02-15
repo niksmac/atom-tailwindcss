@@ -1,7 +1,8 @@
 'use strict';
 
-const config = require('tailwindcss/defaultConfig')();
+const defaultConfig = require('tailwindcss/defaultConfig')();
 const tailwindClassNames = require('tailwind-class-names');
+const configPath = require('./config-path');
 
 module.exports = {
   completions: [],
@@ -12,7 +13,14 @@ module.exports = {
       return this.completions;
     }
 
-    const { classNames } = await tailwindClassNames({ config, strings: true });
+    const options = {
+      config: defaultConfig,
+      strings: true
+    };
+
+    options.configPath = await configPath();
+
+    const { classNames } = await tailwindClassNames(options);
     this.completions = Object.entries(classNames);
     return this.completions;
   },
