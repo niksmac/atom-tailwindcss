@@ -7,7 +7,7 @@ The project is now in a state of maintenance; there is no active development. If
 ## Manually Installing this Atom Package
 
 ```shell
-git clone https://github.com/bitmanic/atom-tailwindcss.git
+git clone git@github.com:niksmac/atom-tailwindcss-2.git atom-tailwindcss
 cd atom-tailwindcss
 npm install
 npm run build
@@ -21,7 +21,7 @@ The following process should be followed to create a new release of this package
 
 ```shell
 # If the project's not set up yet:
-git clone https://github.com/bitmanic/atom-tailwindcss.git
+git clone git@github.com:niksmac/atom-tailwindcss-2.git atom-tailwindcss
 cd atom-tailwindcss
 npm install
 
