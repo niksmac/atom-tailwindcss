@@ -37,7 +37,7 @@
     "json-stringify-pretty-compact": "^2.0.0",
     "semistandard": "^14.0.1",
     "snazzy": "^8.0.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.1.1"
   },
   "providedServices": {
     "autocomplete.provider": {
